@@ -1,0 +1,8 @@
+- name: The API
+  href: api.md
+- name: Extensions
+  href: extensions.md
+- name: Remote API
+  href: remote.md
+- name: Command catalogue
+  href: commands.md

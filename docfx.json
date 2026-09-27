@@ -1,0 +1,24 @@
+{
+  "metadata": [
+    {
+      "src": [ { "src": "../edit-sharp-gui", "files": [ "EditSharp GUI.csproj" ] } ],
+      "dest": "api",
+      "namespaceLayout": "nested",
+      "filter": "filter.yml",
+      "properties": { "UseLocalEditSharp": "true" }
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": [ "api/**.yml", "api/index.md" ] },
+      { "files": [ "*.md", "toc.yml", "articles/**.md", "articles/toc.yml" ] }
+    ],
+    "output": "_site",
+    "template": [ "default", "modern" ],
+    "globalMetadata": {
+      "_appTitle": "EditSharp",
+      "_appName": "EditSharp",
+      "_enableSearch": true
+    }
+  }
+}

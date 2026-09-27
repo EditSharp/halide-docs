@@ -1,0 +1,20 @@
+# the app's public API: the services, remote API and extension types, and the few app types they hand out
+apiRules:
+- include:
+    uidRegex: ^EditSharpGUI\.Api
+- include:
+    uidRegex: ^EditSharpGUI\.Scripts\.App\.Commands\.(Command|CommandContext)$
+- include:
+    uidRegex: ^EditSharpGUI\.Scripts\.App\.Commands\.(Command|CommandContext)\.
+- include:
+    uidRegex: ^EditSharpGUI\.Scripts\.Input\.KeyCombo
+- include:
+    uidRegex: ^EditSharpGUI\.Scripts\.UI\.Docking\.DockSide
+- include:
+    uidRegex: ^EditSharpGUI\.Scripts\.App\.Commands$
+- include:
+    uidRegex: ^EditSharpGUI\.Scripts\.Input$
+- include:
+    uidRegex: ^EditSharpGUI\.Scripts\.UI\.Docking$
+- exclude:
+    uidRegex: .*
